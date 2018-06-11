@@ -2,7 +2,7 @@ const createBoard = require('./createBoard')
 const nextBoard = require('./nextBoard')
 const displayBoard = require('./displayBoard')
 
-const size = 10
+const size = 5
 const refreshInteral = 100
 
 let board = createBoard(size)
