@@ -1,4 +1,4 @@
-# Conway's Game of Life
+# My journey into Conway's Game of Life started like this ...
 
 ## Installation
 
