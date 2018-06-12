@@ -1,37 +1,38 @@
 # My journey into the Indi's Game of Life began like this ...
 
-The universe of the Game of Life is an infinite, two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, alive or dead, (or populated and unpopulated, respectively). Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:
+## Check out others creations of Conway's Game of life, these are totally epic.
 
-    Any live cell with fewer than two live neighbors dies, as if by under population.
-    Any live cell with two or three live neighbors lives on to the next generation.
-    Any live cell with more than three live neighbors dies, as if by overpopulation.
-    Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
+Example of Conway's [here](http://pmav.eu/stuff/javascript-game-of-life-v3.1.1/)
+Also another breathtaking implementation [here](https://copy.sh/life/?gist=f3413564b1fa9c69f2bad4b0400b8090&step=512).
 
-The initial pattern constitutes the seed of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed; births and deaths occur simultaneously, and the discrete moment at which this happens is sometimes called a tick. Each generation is a pure function of the preceding one. The rules continue to be applied repeatedly to create further generations.
+My interest was piqued, I loved what I saw and wanted to create something that I could make my own. However, I had to be realistic about what I could achieve and decided along with Don our great tutor to start small.
 
-## See Conway's game of life in action
+For anyone who is not familiar with the universe that is the Game of Life it is an infinite, two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, alive or dead. Populated and unpopulated, respectively. 
 
-Watch an example of Conway's running [here](http://pmav.eu/stuff/javascript-game-of-life-v3.1.1/). And a truly breathtaking implementation [here](https://copy.sh/life/?gist=f3413564b1fa9c69f2bad4b0400b8090&step=512).
+Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:
 
+    - Any live cell with fewer than two live neighbors dies, as if by under population.
+    - Any live cell with two or three live neighbors lives on to the next generation.
+    - Any live cell with more than three live neighbors dies, as if by overpopulation.
+    - Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
 
-## Learn the rules
+## Build it and they will come, or so I believed!
 
-See the rules section of [the Wikipedia article](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules). The rules are amazingly simple but with those simple rules some pretty cool complexity emerges.
+I, yes me Indigo was going to tackle the task of making my very own version of Conway's Game of Life. I would be able to  render the game out to the console at first. But I had no way of knowing how far I could really take it. 
 
-Note that a rule for our system is that array indices should not _wrap around_ the edges. That means when counting a cell's neighbours that a corner cell will have only three neighbours and an edge cell will have five neighbours. The rest will have eight.
-
-
-## Build it!
-
-Your're going to make your very own version of Conway's Game of Life. You'll render the game out to the console. We recommend you build this using test-driven development (writing the tests before implementing them).
-
-Before you start, think about how this work. What are the things you're going to need to build? 
+Before I could start I needed to think about how this work. What are the things you're going to need to build? 
 
 Are you going to start big and drill down (from the board down to a cell and its neighbours), or start small and expand (from a cell and its neighbours to the board)? There is no right answer, just your preference.
 
 Regardless of where you start, focus on a single task. If that task feels overwhelming, break it down into smaller tasks. Try to come up with as many small tasks as you can. When you start to write code, be very intentional about what you aim to achieve.
 
-_After_ you and your pair have given this some thought, and you have a list of tasks and an order you'll complete them, you can validate your thinking with these tips below.
+## First I had to learn the rules...
+
+See the rules section of [the Wikipedia article](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules). The rules are amazingly simple but with those simple rules some pretty cool complexity emerges.
+
+Note that a rule for our system is that array indices should not _wrap around_ the edges. That means when counting a cell's neighbours that a corner cell will have only three neighbours and an edge cell will have five neighbours. The rest will have eight.
+
+The initial pattern constitutes the seed of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed; births and deaths occur simultaneously, and the discrete moment at which this happens is sometimes called a tick. Each generation is a pure function of the preceding one. The rules continue to be applied repeatedly to create further generations.
 
 <details>
   <summary>Show me some tips</summary>
