@@ -1,7 +1,6 @@
 const createBoard = require('./createBoard')
-const nextBoard = require('./nextBoard')
 const displayBoard = require('./displayBoard')
-
+const nextBoard = require('./nextBoard')
 const size = 5
 const refreshInteral = 100
 

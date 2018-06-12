@@ -1,12 +1,27 @@
-module.exports = createBoard
+module.exports = {
+  createBoard,
+  displayBoard
+}
+
+// let clear = require('clear')
+// clear()
 
 function createBoard (size) {
-  let boardArr = []
+  let array = []
   for (let i = 0; i < size; i++) {
-    boardArr.push([])
+    array.push([])
     for (let j = 0; j < size; j++) {
-      boardArr[i].push([0])
+      array[i].push([0])
     }
   }
-  return boardArr
+  return array
 }
+
+function displayBoard (board) {
+  for (let i in board) {
+    console.log(board[i] + '\n')
+  }
+  return board
+}
+
+displayBoard(5)
